@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Viewer</title>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- jquery 3.5.1 -->
+  <script src="js/jquery.min.js"></script>
+</head>
+
+<body>
+  <section class="product-section">
+    <div class="container">
+      <div class="image-row">
+        <div class="image-col image-box">
+          <span class="expand navigation-bar-resize"></span>
+          <span id="zoomImage" class="zoom"></span>
+
+          <div class="image">
+
+            <div id="product" class="threesixty-image-rotate product"></div>
+
+            <div class="bottom-navigation">
+              <i class="arrow left"></i>
+              <h6>Drag to Rotate. Click to Zoom</h6>
+              <i class="arrow right"></i>
+            </div>
+
+          </div>
+          
+          <div class="img-list">
+            <img class="frameImages active" data-value="0" src="" alt="" />
+            <img class="frameImages" data-value="5" src="" alt="" />
+            <img class="frameImages" data-value="10" src="" alt="" />
+            <img class="frameImages" data-value="15" src="" alt="" />
+            <img class="frameImages" data-value="20" src="" alt="" />
+          </div>
+        </div>
+        <div class="image-col content-box">
+          <div class="content-in">
+            <h1>Thor Buffet</h1>
+            <div id="woodFinish" class="tab-box">
+              <small>WOOD FINISHES: </small>
+              <form class="color-tabs1 color-tabs" name="color-tabs1" method="GET">
+                <div class="color-tab">
+                  <input data-name="charcoal" type="radio" id="t1-color-01" name="color-tabs1" checked />
+                  <label for="t1-color-01" style="background-color:#39322c"></label>
+                </div>
+                <div class="color-tab">
+                  <input data-name="driftwood" type="radio" id="t1-color-02" name="color-tabs1" />
+                  <label for="t1-color-02" style="background-color: #b47e50"></label>
+                </div>
+                <div class="color-tab">
+                  <input data-name="darkwalnut" type="radio" id="t1-color-03" name="color-tabs1" />
+                  <label for="t1-color-03" style="background-color:#301e1e"></label>
+                </div>
+              </form>
+            </div>
+
+            <div id="doorFinish" class="tab-box">
+              <small>DOOR FINISHES:</small>
+              <form class="color-tabs2 color-tabs doorfinishes" name="color-tabs2" method="GET">
+                <div class="color-tab">
+                  <input data-name="silverresin" type="radio" id="t2-color-02" name="color-tabs2" checked />
+                  <label for="t2-color-02" style="background-color:#b6b3ac"></label>
+                </div>
+                <div class="color-tab">
+                  <input data-name="goldresin" type="radio" id="t2-color-01" name="color-tabs2" />
+                  <label for="t2-color-01" style="background-color:#87755d"></label>
+                </div>
+              </form>
+            </div>
+
+            <div id="baseMetalFinish" class="tab-box">
+              <small>BASE METAL FINISHES: </small>
+              <form class="color-tabs3 color-tabs" name="color-tabs3" method="GET">
+                <div class="color-tab">
+                  <input data-name="antiquegold" type="radio" id="t3-color-02" name="color-tabs3" checked />
+                  <label for="t3-color-02" style="background-color:#886e4d"></label>
+                </div>
+                <div class="color-tab">
+                  <input data-name="antiquesilver" type="radio" id="t3-color-03" name="color-tabs3" />
+                  <label for="t3-color-03" style="background-color:#b8b5b0"></label>
+                </div>
+                <div class="color-tab">
+                  <input data-name="antiquebronze" type="radio" id="t3-color-01" name="color-tabs3" />
+                  <label for="t3-color-01" style="background-color:#9e6c55"></label>
+                </div>
+              </form>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/360ImageRotate.js"></script>
+  <script src="js/jquery.zoom.js"></script>
+  <script src="js/jquery.doubletap.js"></script>.
+  <!-- custom js -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
